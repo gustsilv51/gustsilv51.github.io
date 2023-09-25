@@ -8608,7 +8608,7 @@ h1, h2, h3, h4, h5,
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center; }
+  background-position: center center; }
   @media (max-width: 991.98px) {
     .hero-wrap {
       background-position: left center !important; } }
