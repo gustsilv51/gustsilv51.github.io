@@ -38,6 +38,22 @@
 	  gtag('event', 'conversion', {'send_to': 'AW-11349094469/MKvICOq2s-UYEMXg1aMq'});
 	</script>
 
+	<!-- Event snippet for BotaoDeContato conversion page
+	In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+	<script>
+	function gtag_report_conversion(url) {
+	  var callback = function () {
+	    if (typeof(url) != 'undefined') {
+	      window.location = url;
+	    }
+	  };
+	  gtag('event', 'conversion', {
+	      'send_to': 'AW-11349094469/K2yRCLjNxOYYEMXg1aMq',
+	      'event_callback': callback
+	  });
+	  return false;
+	}
+	</script>
 
 
 </head>
@@ -48,7 +64,7 @@
 			<div class="row">
 				
 				<div class="col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
-					<p class="mb-0 register-link"><a href="https://api.whatsapp.com/send?phone=5531982462431" class="btn btn-primary">Agende sua consulta</a></p>
+					<p class="mb-0 register-link"><a href="https://api.whatsapp.com/send?phone=5531982462431" class="btn btn-primary" onclick="gtag_report_conversion('https://api.whatsapp.com/send?phone=5531982462431') >Agende sua consulta</a></p>
 				</div>
 			</div>
 		</div>
