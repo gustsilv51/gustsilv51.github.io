@@ -27,6 +27,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('config', 'AW-16659529348');
 </script>
 
+<script>
+    function redirectToWhatsApp() {
+        var location = document.getElementById("location").value;
+
+        var whatsappNumbers = {
+            "enfant": "5531998777326", 
+            "mater-dei-bh": "5531998592384", 
+            "mater-dei-betim": "553133399800", 
+            "consulta-online": "5531998777326" 
+        };
+
+        var message = "Olá! Gostaria de agendar uma consulta com a pediatra hematologista Dra. Mariana Rezende.";
+        var number = whatsappNumbers[location];
+
+        if (number) {
+            window.location.href = "https://wa.me/" + number + "?text=" + encodeURIComponent(message);
+        } else {
+            alert("Por favor, selecione um local antes de agendar.");
+        }
+    }
+</script>
+
 	<title>Dra. Mariana Rezende - Hematologia pediátrica</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -94,14 +116,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-	<div class="py-1 top">
+	<div class="py-3">
 		<div class="container">
-			<div class="row">
-				
+			<div class="row d-flex align-items-start align-items-center px-3 px-md-0">
+				<div class="col-md-4 d-flex mb-2 mb-md-0">
+				    <a class="navbar-brand d-flex align-items-center" href="index.html">
+				        <img src="images/logo4.png" alt="Logo" style="height: 70px;">
+				    </a>
+				</div>
 				<div class="col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
 					<p class="mb-0 register-link">
 						<a href="https://wa.me/5531998777326?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20pediatra%20hematologista%20Dra.%20Mariana%20Rezende" class="btn btn-primary") >Agende sua consulta</a></p>
 				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -124,18 +151,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</nav>
 	<!-- END nav -->
 	
-	<section class="hero-wrap js-fullheight"  style="background-image: url('images/mariana1.jpeg');" data-stellar-background-ratio="0.5">
+	<section class="hero-wrap js-fullheight"  style="background-image: url('images/mariana12.png');" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
 				<div class="col-lg-6 ftco-animate">
 					<div class="mt-5">
+						<h1 class="mb-4">A Saúde do Seu Filho É Nossa Prioridade</h1>
+						<p class="mb-4">Com amor e dedicação, trabalhamos para que a saúde do seu filho seja sempre uma prioridade.</p>				
 						<div class="row">
 							<div class="col-md-7 col-lg-10">
-								<form action="#" class="appointment-form-intro ftco-animate">
-									<div class="d-flex">
-									</div>
-								</form>
+								<form action="#" class="appointment-form-intro ftco-animate" id="appointment-form">
+							    <div class="d-flex">
+							        <div class="form-group">
+							            <div class="form-field">
+							                <div class="select-wrap">
+							                    <div class="icon"><span class="fa fa-chevron-down"></span></div>
+							                    <select name="location" id="location" class="form-control">
+							                        <option value="">Selecione o local</option>
+							                        <option value="enfant">Enfant Clínica Pediátrica</option>
+							                        <option value="mater-dei-bh">Hospital Mater Dei - BH</option>
+							                        <option value="mater-dei-betim">Hospital Mater Dei - Betim</option>
+							                        <option value="consulta-online">Consulta online</option>
+							                    </select>
+							                </div>
+							            </div>
+							        </div>
+							        <div class="form-group">
+							            <input type="button" value="Agendar Consulta" class="btn-custom form-control py-3 px-4" onclick="redirectToWhatsApp()">
+							        </div>
+							    </div>
+							</form>
 							</div>
 						</div>
 					</div>
@@ -148,7 +194,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-2">
 				<div class="col-md-8 text-center heading-section ftco-animate">
-					<h2 class="mb-4">Consultas pediátrica em <span>hematologia</span></h2>
+					<h2 class="mb-4">Consulta pediátrica em <span>hematologia</span></h2>
 				</div>
 			</div>
 			<div class="row tabulation mt-4 ftco-animate">
@@ -265,7 +311,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</section>
 
 
-	<section class="ftco-section testimony-section img" style="background-image: url(images/mariana4.jpg);">
+	<section class="ftco-section testimony-section img" style="background-image: url(images/54.png);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row justify-content-center pb-3">
@@ -354,35 +400,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</section>
 
 	<footer class="ftco-footer">
-		<div class="container mb-5 pb-4">
-			<div class="row">
+    <div class="container mb-5 pb-4">
+      <div class="row">
+        <div class="col-lg col-md-6">
+          <div class="ftco-footer-widget">
+            <h2 class="ftco-heading-2 logo d-flex align-items-center">
+              <a href="#">
+                  <img src="images/logo4.png" alt="Logo" style="height: 80px; margin-left: 10px;"> 
+              </a>
+            </h2>
+          </div>
+        </div>
 
-				<div class="col-lg col-md-6">
-					<div class="ftco-footer-widget">
-						<h2 class="ftco-heading-2">Links</h2>
-						<ul class="list-unstyled">
-							<li><a href="index.html"><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
-							<li><a href="sobre-mim.html"><span class="fa fa-chevron-right mr-2"></span>Sobre Mim</a></li>
-							<li><a href="especialidades.html"><span class="fa fa-chevron-right mr-2"></span>Especialidades</a></li>
-							<li><a href="onde-atendo.html"><span class="fa fa-chevron-right mr-2"></span>Onde Atendo</a></li>
-							<li><a href="galeria.html"><span class="fa fa-chevron-right mr-2"></span>Galeria</a></li>
-						</ul>
-					</div>
-				</div>
 
-			</div>
-		</div>
-		<div class="container-fluid bg-primary py-5">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					
-					<p class="mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-					</div>
-				</div>
-			</div>
-		</footer>
+        <div class="col-lg col-md-6">
+          <div class="ftco-footer-widget">
+            <h2 class="ftco-heading-2">Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="index.html"><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
+              <li><a href="sobre-mim.html"><span class="fa fa-chevron-right mr-2"></span>Sobre Mim</a></li>
+              <li><a href="especialidades.html"><span class="fa fa-chevron-right mr-2"></span>Especialidades</a></li>
+              <li><a href="onde-atendo.html"><span class="fa fa-chevron-right mr-2"></span>Onde Atendo</a></li>
+              <li><a href="galeria.html"><span class="fa fa-chevron-right mr-2"></span>Galeria</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg col-md-6">
+            <div class="ftco-footer-widget">
+                <h2 class="ftco-heading-2">Dúvidas?</h2>
+                <div class="block-23 mb-3">
+                    <ul>
+                        <li>
+                            <span class="text">Entre em contato conosco!</span>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/5531998777326?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20pediatra%20hematologista%20Dra.%20Mariana%20Rezende" >
+                                <span class="fa fa-phone mr-3"></span>
+                                <span class="text">(31) 99877-7326</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="container-fluid bg-primary py-5">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          
+          <p class="mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
 		
 		
 
