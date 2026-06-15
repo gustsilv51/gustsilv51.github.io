@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="100" fill="#F0F4F8"/>
+
+  
+    <!-- Short hair -->
+    <ellipse cx="100" cy="80" rx="48" ry="46" fill="#2C1B0E"/>
+    
+
+  <!-- Neck -->
+  <rect x="90" y="125" width="20" height="32" rx="6" fill="#C68642"/>
+
+  <!-- Face -->
+  <ellipse cx="100" cy="95" rx="42" ry="48" fill="#C68642"/>
+
+  <!-- Eyes -->
+  <ellipse cx="84" cy="90" rx="5" ry="6" fill="#fff"/>
+  <ellipse cx="116" cy="90" rx="5" ry="6" fill="#fff"/>
+  <circle cx="85" cy="91" r="3.5" fill="#3B2314"/>
+  <circle cx="117" cy="91" r="3.5" fill="#3B2314"/>
+  <circle cx="86" cy="89" r="1.2" fill="#fff"/>
+  <circle cx="118" cy="89" r="1.2" fill="#fff"/>
+
+  <!-- Eyebrows -->
+  <path d="M79 82 Q84 78 89 82" stroke="#3B2314" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M111 82 Q116 78 121 82" stroke="#3B2314" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <ellipse cx="100" cy="103" rx="4" ry="5" fill="none" stroke="#C68642" stroke-width="0"/>
+  <path d="M97 103 Q100 108 103 103" stroke="#C9956A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Smile -->
+  <path d="M88 115 Q100 124 112 115" stroke="#B5704A" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Cheeks -->
+  <ellipse cx="76" cy="108" rx="10" ry="6" fill="#FFB3A0" opacity="0.35"/>
+  <ellipse cx="124" cy="108" rx="10" ry="6" fill="#FFB3A0" opacity="0.35"/>
+
+  <!-- Body / shoulders -->
+  <ellipse cx="100" cy="185" rx="55" ry="30" fill="#4FC3F7"/>
+</svg>

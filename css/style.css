@@ -8621,7 +8621,7 @@ h1, h2, h3, h4, h5,
     right: 0;
     bottom: 0;
     content: '';
-    opacity: .15;
+    opacity: .35;
     background: #000000; }
   .hero-wrap.hero-wrap-2 {
     height: 600px;
@@ -8648,12 +8648,14 @@ h1, h2, h3, h4, h5,
     font-size: 60px;
     color: #fff;
     line-height: 1;
-    font-weight: 700; }
+    font-weight: 700;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7); }
     @media (max-width: 991.98px) {
       .slider-text h1 {
         font-size: 40px; } }
   .slider-text p {
-    font-weight: 400; }
+    font-weight: 400;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6); }
     .slider-text p strong {
       font-weight: 700; }
       .slider-text p strong a {
