@@ -8481,15 +8481,16 @@ h1, h2, h3, h4, h5,
       padding-bottom: 20px;
       margin-right: 0; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 14px;
+    font-size: 13px;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 13px;
+    padding-right: 13px;
     color: #fff;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 2px; }
+    letter-spacing: 1px;
+    white-space: nowrap; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link span {
       position: relative;
       display: block;
