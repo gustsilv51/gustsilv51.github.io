@@ -10056,3 +10056,157 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* ============================================
+   OTIMIZAÇÕES MOBILE — Dra. Mariana
+   ============================================ */
+
+/* 1. HERO — altura e texto menor no mobile */
+@media (max-width: 767.98px) {
+  .js-fullheight {
+    height: 68vh !important;
+    min-height: 380px !important;
+  }
+  .hero-wrap .slider-text {
+    height: 68vh !important;
+    min-height: 380px !important;
+  }
+  .slider-text h1 {
+    font-size: 1.55rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: 12px !important;
+  }
+  .slider-text p {
+    font-size: 0.88rem !important;
+    margin-bottom: 16px !important;
+  }
+  /* Centralizar texto do hero no mobile */
+  .slider-text .row.justify-content-end {
+    justify-content: center !important;
+  }
+  .slider-text .col-lg-6 {
+    text-align: center;
+  }
+  .slider-text .col-md-7 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  /* 2. PADDING DAS SEÇÕES — reduzir espaço desperdiçado */
+  .ftco-section {
+    padding: 3rem 0 !important;
+  }
+  .ftco-section.ftco-no-pb {
+    padding-bottom: 1rem !important;
+  }
+
+  /* 3. ABAS DE ESPECIALIDADES — scroll horizontal no mobile */
+  .nav-pills.flex-column {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 6px;
+    border-right: none !important;
+    border-bottom: 2px solid #f0e0de;
+    margin-bottom: 16px;
+  }
+  .nav-pills.flex-column::-webkit-scrollbar {
+    display: none;
+  }
+  .nav-pills .nav-item {
+    flex-shrink: 0;
+  }
+  .nav-pills .nav-item .nav-link {
+    padding: 10px 16px !important;
+    white-space: nowrap;
+    border-radius: 20px !important;
+    margin-right: 6px;
+    font-size: 0.82rem;
+  }
+  /* Imagem das abas no mobile */
+  .tab-pane .img {
+    height: 200px !important;
+    min-height: 200px;
+    margin-bottom: 16px;
+  }
+
+  /* 4. BOTÃO FLUTUANTE WA — esconder no mobile (substituído pela barra sticky) */
+  .whatsapp-float {
+    display: none !important;
+  }
+
+  /* 5. ESPAÇO PARA A BARRA STICKY NO RODAPÉ */
+  body {
+    padding-bottom: 62px;
+  }
+
+  /* 6. CARDS — melhorar espaçamento */
+  .col-md-4.mb-4, .col-md-5.mb-4, .col-md-3.mb-4 {
+    margin-bottom: 12px !important;
+  }
+
+  /* 7. FOOTER — compactar no mobile */
+  footer .col-md-4,
+  footer .col-md-3,
+  footer .col-md-5 {
+    margin-bottom: 24px !important;
+  }
+
+  /* 8. BARRA DE PROVA SOCIAL — números menores */
+  .col-6.col-md-3 h3 {
+    font-size: 1.7rem !important;
+  }
+
+  /* 9. BOTÕES — garantir altura mínima de toque */
+  .btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* BARRA STICKY DE AGENDAMENTO — só no mobile */
+.mobile-cta-sticky {
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .mobile-cta-sticky {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9998;
+    background: #25D366;
+    box-shadow: 0 -3px 16px rgba(0,0,0,0.25);
+  }
+  .mobile-cta-sticky a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    color: #fff !important;
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+  }
+  .mobile-cta-sticky i {
+    font-size: 1.25rem;
+    margin-right: 8px;
+  }
+}
+
+/* Botão MENU: mover para esquerda no mobile */
+@media (max-width: 991.98px) {
+  #ftco-navbar .container.d-flex {
+    justify-content: flex-start !important;
+  }
+  #ftco-navbar .navbar-toggler {
+    margin-left: 14px;
+  }
+}
