@@ -337,22 +337,22 @@
     tabulation.appendChild(acc);
 
     // Atualiza ícone +/- ao abrir/fechar
-    document.getElementById('mobEspAccordion').addEventListener('show.bs.collapse', function(e) {
+    $('#mobEspAccordion').on('show.bs.collapse', function(e) {
       var btn = this.querySelector('[data-target="#' + e.target.id + '"]');
       if (btn) { var ic = btn.querySelector('.fa'); ic.className = ic.className.replace('fa-plus','fa-minus'); }
     });
-    document.getElementById('mobEspAccordion').addEventListener('shown.bs.collapse', function(e) {
+    $('#mobEspAccordion').on('shown.bs.collapse', function(e) {
       var card = e.target.closest('.card');
       if (!card) return;
 
-      window.setTimeout(function() {
+      window.requestAnimationFrame(function() {
         var navbar = document.getElementById('ftco-navbar');
         var navbarHeight = navbar ? navbar.offsetHeight : 0;
         var destination = card.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 12;
         window.scrollTo({ top: Math.max(0, destination), behavior: 'smooth' });
-      }, 40);
+      });
     });
-    document.getElementById('mobEspAccordion').addEventListener('hide.bs.collapse', function(e) {
+    $('#mobEspAccordion').on('hide.bs.collapse', function(e) {
       var btn = this.querySelector('[data-target="#' + e.target.id + '"]');
       if (btn) { var ic = btn.querySelector('.fa'); ic.className = ic.className.replace('fa-minus','fa-plus'); }
     });
