@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Conheça a Dra. Mariana Rezende: hematologista pediátrica formada pela UFMG, com residência no Hospital das Clínicas e atuação na Rede Mater Dei de Saúde em Belo Horizonte.">
   
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -21,10 +21,11 @@
   
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pediatric-home.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 	<script src="js/meta-pixel.js" defer></script>
 </head>
-<body>
+<body class="pediatric-home pediatric-about">
   <!-- Google Tag Manager (noscript) -->
 <!-- End Google Tag Manager (noscript) -->
 
@@ -36,8 +37,9 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="fa fa-bars"></span> Menu
       </button>
-			<a class="navbar-brand mr-4" href="index.html">
-        <img loading="lazy" src="images/logo4.png" alt="Dra. Mariana Rezende" style="height:48px;">
+			<a class="navbar-brand mr-4 brand-lockup" href="index.html" aria-label="Dra. Mariana Rezende — página inicial">
+        <img class="brand-mascot" src="images/hemacia-exploradora-logo.png" alt="Hemácia Exploradora">
+        <span class="brand-words"><strong>Dra. Mariana Rezende</strong><small>Hematologia Pediátrica</small></span>
       </a>
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav mr-auto">
@@ -55,24 +57,26 @@
   </nav>
   <!-- END nav -->
 
-<section style="background:#f8f9fa; padding:20px 0 16px; border-bottom:1px solid #e9ecef;">
+<section class="about-page-hero">
   <div class="container">
-    <p style="font-size:0.82rem; color:#999; margin-bottom:4px;">
-      <a href="index.html" style="color:#999;">Home</a>
-      <i class="fa fa-chevron-right" style="font-size:0.7rem; margin:0 5px;"></i>
-      <span>Sobre Mim</span>
-    </p>
-    <h1 style="font-size:1.75rem; font-weight:700; color:#2d2d2d; margin:0;">Sobre Mim</h1>
+    <div class="about-page-heading">
+      <div>
+        <p class="about-breadcrumb"><a href="index.html">Home</a><i class="fa fa-chevron-right"></i><span>Sobre Mim</span></p>
+        <span class="about-eyebrow">Conheça quem cuida</span>
+        <h1>Ciência, acolhimento<br>e carinho pelas crianças</h1>
+        <p>Uma trajetória dedicada a transformar dúvidas e diagnósticos em clareza, segurança e um plano de cuidado para cada família.</p>
+      </div>
+      <img src="images/hemacia-exploradora-logo.png" alt="Hemácia Exploradora, personagem da Dra. Mariana">
+    </div>
   </div>
 </section>
 
-<section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+<section class="ftco-counter img ftco-section about-profile" id="about-section">
  <div class="container">
   <div class="row d-flex">
    <div class="col-md-6 col-lg-5 d-flex">
-    <div class="img w-100 d-flex align-self-stretch align-items-center" style="background-image:url(images/mariana6.jpg);">
+    <div class="about-photo-wrap"><div class="img w-100 d-flex align-self-stretch align-items-center" style="background-image:url(images/mariana6.jpg);"></div><span>Dra. Mariana</span></div>
     </div>
-  </div>
   <div class="col-md-6 col-lg-7 pl-lg-5 py-md-5">
     <div class="py-md-5">
      <div class="row justify-content-start pb-3">
@@ -88,7 +92,7 @@
 
          <p>O que move a Dra. Mariana não é o diagnóstico em si. É o momento em que os pais deixam de ter medo para começar a entender. "Quando uma família sai da consulta com clareza sobre o que está acontecendo com o filho — e com um plano — eu sei que fiz meu trabalho."</p>
 
-         <div class="mt-4 mb-4 p-3" style="background:#f8f9fa; border-left:4px solid #C57D7B; border-radius:4px; font-size:0.9rem;">
+         <div class="about-training mt-4 mb-4 p-3">
            <strong>Formação:</strong>
            <ul class="mt-2 mb-0">
              <li>Residência em Hematologia e Hemoterapia Pediátrica — HC/UFMG (2020–2022)</li>
@@ -98,7 +102,7 @@
            </ul>
          </div>
 
-         <p><a href="https://www.doctoralia.com.br/mariana-de-oliveira-rezende" class="btn btn-primary py-3 px-4">Ver no Doctoralia</a> <a href="http://lattes.cnpq.br/7851872501637734" class="btn btn-secondary py-3 px-4">Plataforma Lattes</a></p>
+         <p class="about-links"><a href="https://www.doctoralia.com.br/mariana-de-oliveira-rezende" class="btn btn-primary py-3 px-4">Ver no Doctoralia</a> <a href="http://lattes.cnpq.br/7851872501637734" class="btn btn-secondary py-3 px-4">Plataforma Lattes</a></p>
        </div>
      </div>
    </div>
@@ -108,14 +112,15 @@
 </section>
 
 
-<footer style="background:#1a1a2e; color:#ccc; padding:48px 0 0;">
+<footer class="home-footer" style="background:#1a1a2e; color:#ccc; padding:48px 0 0;">
   <div class="container">
     <div class="row">
 
       <!-- Logo + tagline -->
       <div class="col-md-4 mb-4">
-        <a href="index.html">
-          <img loading="lazy" src="images/logo4.png" alt="Dra. Mariana Rezende" style="height:70px; margin-bottom:12px;">
+        <a href="index.html" class="footer-brand-lockup">
+          <img src="images/hemacia-exploradora-logo.png" alt="Hemácia Exploradora">
+          <span><strong>Dra. Mariana Rezende</strong><small>Hematologia Pediátrica</small></span>
         </a>
         <p style="font-size:0.88rem; color:#aaa; line-height:1.6;">
           Hematologista pediátrica em Belo Horizonte.<br>

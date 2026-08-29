@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Atendimento presencial da Dra. Mariana Rezende em Belo Horizonte: Clínica Catavento (Funcionários) e Hospital Integrado do Câncer Rede Mater Dei. Também disponível online.">
   
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -21,10 +21,11 @@
   
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pediatric-home.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 	<script src="js/meta-pixel.js" defer></script>
 </head>
-<body>
+<body class="pediatric-home pediatric-locations">
 <!-- Google Tag Manager (noscript) -->
 <!-- End Google Tag Manager (noscript) -->
 
@@ -36,8 +37,9 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="fa fa-bars"></span> Menu
       </button>
-			<a class="navbar-brand mr-4" href="index.html">
-        <img loading="lazy" src="images/logo4.png" alt="Dra. Mariana Rezende" style="height:48px;">
+			<a class="navbar-brand mr-4 brand-lockup" href="index.html" aria-label="Dra. Mariana Rezende — página inicial">
+        <img class="brand-mascot" src="images/hemacia-exploradora-logo.png" alt="Hemácia Exploradora">
+        <span class="brand-words"><strong>Dra. Mariana Rezende</strong><small>Hematologia Pediátrica</small></span>
       </a>
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav mr-auto">
@@ -55,23 +57,26 @@
   </nav>
   <!-- END nav -->
 
-   <section style="background:#f8f9fa; padding:20px 0 16px; border-bottom:1px solid #e9ecef;">
+   <section class="locations-page-hero">
   <div class="container">
-    <p style="font-size:0.82rem; color:#999; margin-bottom:4px;">
-      <a href="index.html" style="color:#999;">Home</a>
-      <i class="fa fa-chevron-right" style="font-size:0.7rem; margin:0 5px;"></i>
-      <span>Onde Atendo</span>
-    </p>
-    <h1 style="font-size:1.75rem; font-weight:700; color:#2d2d2d; margin:0;">Onde Atendo</h1>
+    <div class="locations-page-heading">
+      <div>
+        <p class="locations-breadcrumb"><a href="index.html">Home</a><i class="fa fa-chevron-right"></i><span>Onde Atendo</span></p>
+        <span class="locations-eyebrow">Perto de você</span>
+        <h1>Escolha onde sua família<br>prefere ser atendida</h1>
+        <p>Consultas presenciais em Belo Horizonte e atendimento online para crianças de todo o Brasil.</p>
+      </div>
+      <div class="locations-hero-visual"><span class="location-pin"><i class="fa fa-heart"></i></span><img src="images/hemacia-exploradora-logo.png" alt="Hemácia Exploradora"><span class="location-note">BH ou online</span></div>
+    </div>
   </div>
 </section>
 
-<section class="ftco-section">
+<section class="ftco-section locations-section location-cards-section">
     <div class="container">
       <div class="row justify-content-center">
 
         <div class="col-md-4 mb-4 ftco-animate">
-          <div class="p-4 h-100" style="background:#fff; border:1px solid #e9ecef; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+          <div class="p-4 h-100 location-card" style="background:#fff; border:1px solid #e9ecef; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.06);">
             <div class="mb-3" style="color:#C57D7B; font-size:1.4rem;"><i class="fa fa-map-marker"></i></div>
             <h5 class="font-weight-bold mb-2">Clínica Catavento</h5>
             <p style="color:#6c757d; font-size:0.9rem; margin-bottom:8px;">R. Gonçalves Dias, 82 — sala 701<br>Funcionários, Belo Horizonte - MG</p>
@@ -83,7 +88,7 @@
         </div>
 
         <div class="col-md-4 mb-4 ftco-animate">
-          <div class="p-4 h-100" style="background:#fff; border:1px solid #e9ecef; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+          <div class="p-4 h-100 location-card" style="background:#fff; border:1px solid #e9ecef; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.06);">
             <div class="mb-3" style="color:#C57D7B; font-size:1.4rem;"><i class="fa fa-hospital-o"></i></div>
             <h5 class="font-weight-bold mb-2">Hospital Integrado do Câncer<br><small class="text-muted font-weight-normal">Rede Mater Dei — BH</small></h5>
             <p style="color:#6c757d; font-size:0.9rem; margin-bottom:8px;">Rua Uberaba, 900 — Barro Preto<br>Belo Horizonte - MG</p>
@@ -95,7 +100,7 @@
         </div>
 
         <div class="col-md-4 mb-4 ftco-animate">
-          <div class="p-4 h-100" style="background:#fff; border:2px solid #C57D7B; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+          <div class="p-4 h-100 location-card location-card-online" style="background:#fff; border:2px solid #C57D7B; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.06);">
             <div class="mb-3" style="color:#C57D7B; font-size:1.4rem;"><i class="fa fa-video-camera"></i></div>
             <h5 class="font-weight-bold mb-2">Consulta Online</h5>
             <p style="color:#6c757d; font-size:0.9rem; margin-bottom:8px;">Via Google Meet<br>Para crianças de <strong>todo o Brasil</strong></p>
@@ -111,7 +116,7 @@
 </section>
 
 <!-- Seção Reembolso -->
-<section id="reembolso" style="background:#fff8f7; padding:60px 0; border-top:1px solid #f0e0de;">
+<section id="reembolso" class="refund-section refund-detail-section" style="background:#fff8f7; padding:60px 0; border-top:1px solid #f0e0de;">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-10">
@@ -163,14 +168,15 @@
   </div>
 </section>
 
-<footer style="background:#1a1a2e; color:#ccc; padding:48px 0 0;">
+<footer class="home-footer" style="background:#1a1a2e; color:#ccc; padding:48px 0 0;">
   <div class="container">
     <div class="row">
 
       <!-- Logo + tagline -->
       <div class="col-md-4 mb-4">
-        <a href="index.html">
-          <img loading="lazy" src="images/logo4.png" alt="Dra. Mariana Rezende" style="height:70px; margin-bottom:12px;">
+        <a href="index.html" class="footer-brand-lockup">
+          <img src="images/hemacia-exploradora-logo.png" alt="Hemácia Exploradora">
+          <span><strong>Dra. Mariana Rezende</strong><small>Hematologia Pediátrica</small></span>
         </a>
         <p style="font-size:0.88rem; color:#aaa; line-height:1.6;">
           Hematologista pediátrica em Belo Horizonte.<br>

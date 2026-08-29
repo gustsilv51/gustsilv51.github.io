@@ -43,11 +43,13 @@
 	
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/pediatric-home.css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 	<script src="js/meta-pixel.js" defer></script>
 </head>
-<body>
+<body class="pediatric-home">
 	<!-- Google Tag Manager (noscript) -->
 <!-- End Google Tag Manager (noscript) -->
 
@@ -59,9 +61,10 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="fa fa-bars"></span> Menu
 			</button>
-			<a class="navbar-brand mr-4" href="index.html">
-        <img loading="lazy" src="images/logo4.png" alt="Dra. Mariana Rezende" style="height:48px;">
-      </a>
+			<a class="navbar-brand brand-lockup mr-4" href="index.html" aria-label="Dra. Mariana Rezende — Hematologia Pediátrica">
+	        <img class="brand-mascot" src="images/hemacia-exploradora-logo.png" alt="" aria-hidden="true">
+	        <span class="brand-words"><strong>Dra. Mariana Rezende</strong><small>Hematologia Pediátrica</small></span>
+	      </a>
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
@@ -78,17 +81,20 @@
 	</nav>
 	<!-- END nav -->
 	
-	<section class="hero-wrap js-fullheight"  style="background-image: url('images/mariana12.png');" data-stellar-background-ratio="0.5">
+	<section class="hero-wrap home-hero">
 		<div class="overlay"></div>
 		<div class="container">
-			<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+			<div class="row slider-text align-items-center justify-content-between">
+				<div class="col-lg-5 hero-visual ftco-animate" aria-hidden="true">
+					<div class="doctor-frame"><img src="images/mariana8.jpg" alt=""><span class="frame-dot frame-dot-one"></span><span class="frame-dot frame-dot-two"></span></div>
+				</div>
 				<div class="col-lg-6 ftco-animate">
 					<div class="mt-5">
 						<h1 class="mb-3">Hematologista Pediátrica em BH — quando a saúde do sangue do seu filho não pode esperar</h1>
 						<p class="mb-4">Exame de sangue alterado, manchas roxas inexplicadas, anemia que não melhora? A Dra. Mariana Rezende, formada pela UFMG e com atuação na Rede Mater Dei, oferece consultas presenciais em BH e online para todo o Brasil.</p>
 						<div class="row">
 							<div class="col-md-7 col-lg-10">
-								<a href="https://wa.me/5531998777326?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20hematologista%20pedi%C3%A1trica%20Dra.%20Mariana%20Rezende." class="btn btn-primary py-3 px-5 mt-2" style="font-size:1.1rem; background:#25D366; border-color:#25D366;" onclick="return gtag_report_conversion(this.href)">
+								<a href="https://wa.me/5531998777326?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20hematologista%20pedi%C3%A1trica%20Dra.%20Mariana%20Rezende." class="btn btn-primary hero-booking-cta py-3 px-5 mt-2" style="font-size:1.1rem; background:#25D366; border-color:#25D366;" onclick="return gtag_report_conversion(this.href)">
 									<i class="fa fa-whatsapp mr-2"></i> Agendar Consulta — BH ou Online
 								</a>
 							</div>
@@ -100,7 +106,7 @@
 	</section>
 
 	<!-- BARRA DE PROVA SOCIAL -->
-	<section style="background:#f8f9fa; padding:35px 0; border-bottom:1px solid #e9ecef;">
+	<section class="proof-strip" style="background:#f8f9fa; padding:35px 0; border-bottom:1px solid #e9ecef;">
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-6 col-md-3 mb-3 mb-md-0">
@@ -124,7 +130,7 @@
 	</section>
 
 	<!-- PARA QUEM É ESSA CONSULTA -->
-	<section class="ftco-section" style="padding-bottom:30px;">
+	<section class="ftco-section signs-section" style="padding-bottom:30px;">
 		<div class="container">
 			<div class="row justify-content-center mb-4">
 				<div class="col-md-8 text-center heading-section ftco-animate">
@@ -173,7 +179,7 @@
 						</div>
 					</div>
 					<div class="text-center mt-4">
-						<a href="https://wa.me/5531998777326?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20hematologista%20pedi%C3%A1trica%20Dra.%20Mariana%20Rezende." class="btn btn-primary py-3 px-5" onclick="return gtag_report_conversion(this.href)">
+						<a href="https://wa.me/5531998777326?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20hematologista%20pedi%C3%A1trica%20Dra.%20Mariana%20Rezende." class="btn btn-primary signs-whatsapp-cta py-3 px-5" onclick="return gtag_report_conversion(this.href)">
 							<i class="fa fa-whatsapp mr-2"></i> Agendar consulta pelo WhatsApp
 						</a>
 					</div>
@@ -182,7 +188,7 @@
 		</div>
 	</section>
 
-	<section class="ftco-section">
+	<section class="ftco-section specialties-section">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-2">
 				<div class="col-md-8 text-center heading-section ftco-animate">
@@ -193,25 +199,25 @@
 				<div class="col-md-3">
 					<ul class="nav nav-pills nav-fill d-block w-100">
 						<li class="nav-item text-left">
-							<a class="nav-link active d-flex align-items-centere py-4" data-toggle="tab" href="#services-1"><span class="flaticon-health flaticon mr-3"></span> <span>Anemia</span></a>
+							<a class="nav-link active d-flex align-items-center py-4" data-toggle="tab" href="#services-1"><span class="blood-drop-icon mr-3" aria-hidden="true"></span> <span>Anemia</span></a>
 						</li>
 						<li class="nav-item text-left">
-							<a class="nav-link py-4 d-flex align-items-center" data-toggle="tab" href="#services-2"><span class="flaticon-health flaticon mr-3"></span> <span>Trombocitopenia</span></a>
+							<a class="nav-link py-4 d-flex align-items-center" data-toggle="tab" href="#services-2"><span class="blood-drop-icon mr-3" aria-hidden="true"></span> <span>Trombocitopenia</span></a>
 						</li>
 						<li class="nav-item text-left">
-							<a class="nav-link py-4 d-flex align-items-center" data-toggle="tab" href="#services-3"><span class="flaticon-health flaticon mr-3"></span> <span>Distúrbios de Coagulação</span></a>
+							<a class="nav-link py-4 d-flex align-items-center" data-toggle="tab" href="#services-3"><span class="blood-drop-icon mr-3" aria-hidden="true"></span> <span>Distúrbios de Coagulação</span></a>
 						</li>
 						<li class="nav-item text-left">
-							<a class="nav-link py-4 d-flex align-items-center" data-toggle="tab" href="#services-4"><span class="flaticon-health flaticon mr-3"></span> <span>Leucemia Infantil</span></a>
+							<a class="nav-link py-4 d-flex align-items-center" data-toggle="tab" href="#services-4"><span class="blood-drop-icon mr-3" aria-hidden="true"></span> <span>Leucemia Infantil</span></a>
 						</li>
 						<li class="nav-item text-left">
-							<a class="nav-link py-4 d-flex align-items-center" data-toggle="tab" href="#services-5"><span class="flaticon-health flaticon mr-3"></span> <span>Talassemia</span></a>
+							<a class="nav-link py-4 d-flex align-items-center" data-toggle="tab" href="#services-5"><span class="blood-drop-icon mr-3" aria-hidden="true"></span> <span>Talassemia</span></a>
 						</li>
 						<li class="nav-item text-left">
-							<a class="nav-link py-4 d-flex align-items-center" data-toggle="tab" href="#services-6"><span class="flaticon-health flaticon mr-3"></span> <span>Esferocitose Hereditária</span></a>
+							<a class="nav-link py-4 d-flex align-items-center" data-toggle="tab" href="#services-6"><span class="blood-drop-icon mr-3" aria-hidden="true"></span> <span>Esferocitose Hereditária</span></a>
 						</li>
 						<li class="nav-item text-left">
-							<a class="nav-link py-4 d-flex align-items-center" data-toggle="tab" href="#services-7"><span class="flaticon-health flaticon mr-3"></span> <span>Deficiência de G6PD</span></a>
+							<a class="nav-link py-4 d-flex align-items-center" data-toggle="tab" href="#services-7"><span class="blood-drop-icon mr-3" aria-hidden="true"></span> <span>Deficiência de G6PD</span></a>
 						</li>
 					</ul>
 				</div>
@@ -220,7 +226,7 @@
 					<div class="tab-content pt-4 pt-md-0 pl-md-3">
 						<div class="tab-pane container p-0 active" id="services-1">
 							<div class="row">
-								<div class="col-md-5 img" style="background-image: url(images/anemia.jpg);"></div>
+								<div class="col-md-5 img" style="background-image: url(images/doenca-anemia-ludica.webp);"></div>
 								<div class="col-md-7 text pl-md-4">
 									<h3><a href="especialidades.html">Anemia</a></h3>
 									<p>Seu filho está sempre cansado, pálido ou sem fôlego para brincar? Pode ser anemia — e nem sempre a causa é falta de ferro. A Dra. Mariana investiga a origem do problema e orienta o tratamento certo. Descobrir a causa faz toda a diferença para que seu filho volte a ter energia e qualidade de vida.</p>
@@ -229,7 +235,7 @@
 						</div>
 						<div class="tab-pane container p-0 fade" id="services-2">
 							<div class="row">
-								<div class="col-md-5 img" style="background-image: url(images/trombocitopenia.jpg);"></div>
+								<div class="col-md-5 img" style="background-image: url(images/doenca-trombocitopenia-ludica.webp);"></div>
 								<div class="col-md-7 text pl-md-4">
 									<h3><a href="especialidades.html">Plaquetas Baixas / Manchas Roxas</a></h3>
 									<p>Manchas roxas que aparecem sem motivo, sangramentos que demoram a parar ou plaquetas baixas no hemograma — esses sinais merecem atenção especializada. A Dra. Mariana investiga a causa e explica tudo de forma clara para que você entenda exatamente o que está acontecendo com o seu filho.</p>
@@ -238,7 +244,7 @@
 						</div>
 						<div class="tab-pane container p-0 fade" id="services-3">
 							<div class="row">
-								<div class="col-md-5 img" style="background-image: url(images/hemofilia.jpg);"></div>
+								<div class="col-md-5 img" style="background-image: url(images/doenca-coagulacao-ludica.webp);"></div>
 								<div class="col-md-7 text pl-md-4">
 									<h3><a href="especialidades.html">Distúrbios de Coagulação</a></h3>
 									<p>Hemofilia, doença de von Willebrand e outros distúrbios da coagulação podem ser assustadores — especialmente quando o diagnóstico é novo. A Dra. Mariana acompanha crianças com essas condições com cuidado e atenção, explicando cada etapa do tratamento para que a família se sinta segura e amparada.</p>
@@ -247,7 +253,7 @@
 						</div>
 						<div class="tab-pane container p-0 fade" id="services-4">
 							<div class="row">
-								<div class="col-md-5 img" style="background-image: url(images/leucemia-infantil.jpg);"></div>
+								<div class="col-md-5 img" style="background-image: url(images/doenca-leucemia-ludica.webp);"></div>
 								<div class="col-md-7 text pl-md-4">
 									<h3><a href="especialidades.html">Leucemia Infantil</a></h3>
 									<p>Receber o diagnóstico de leucemia é devastador. Ter ao lado uma especialista de confiança faz diferença. A Dra. Mariana atua na avaliação e acompanhamento de leucemia infantil, com suporte humanizado para a criança e para toda a família — porque o cuidado vai muito além do exame.</p>
@@ -256,7 +262,7 @@
 						</div>
 						<div class="tab-pane container p-0 fade" id="services-5">
 							<div class="row">
-								<div class="col-md-5 img" style="background-image: url(images/talassemia.png);"></div>
+								<div class="col-md-5 img" style="background-image: url(images/doenca-talassemia-ludica.webp);"></div>
 								<div class="col-md-7 text pl-md-4">
 									<h3><a href="especialidades.html">Talassemia</a></h3>
 									<p>A talassemia é uma condição genética que causa anemia crônica e precisa de acompanhamento regular e especializado. A Dra. Mariana orienta as famílias sobre o cuidado de longo prazo, as transfusões e as melhores estratégias para garantir qualidade de vida e desenvolvimento saudável para seu filho.</p>
@@ -265,7 +271,7 @@
 						</div>
 						<div class="tab-pane container p-0 fade" id="services-6">
 							<div class="row">
-								<div class="col-md-5 img" style="background-image: url(images/esferocitose.jpg);"></div>
+								<div class="col-md-5 img" style="background-image: url(images/doenca-esferocitose-ludica.webp);"></div>
 								<div class="col-md-7 text pl-md-4">
 									<h3><a href="especialidades.html">Esferocitose Hereditária</a></h3>
 									<p>Na esferocitose, os glóbulos vermelhos nascem com formato de esfera — ao invés do "disquinho" normal — e por isso são destruídos mais rápido pelo baço. Isso pode causar anemia, olhos e pele amarelados (icterícia) e aumento do baço, muitas vezes desde o período neonatal.</p>
@@ -275,7 +281,7 @@
 						</div>
 						<div class="tab-pane container p-0 fade" id="services-7">
 							<div class="row">
-								<div class="col-md-5 img" style="background-image: url(images/g6pd.jpg);"></div>
+								<div class="col-md-5 img" style="background-image: url(images/doenca-g6pd-ludica.webp);"></div>
 								<div class="col-md-7 text pl-md-4">
 									<h3><a href="especialidades.html">Deficiência de G6PD</a></h3>
 									<p>A deficiência de G6PD é uma condição genética em que uma enzima — o "escudo protetor" dos glóbulos vermelhos — está deficiente. Na maior parte do tempo, a criança está completamente bem. O problema aparece quando há contato com certos gatilhos: alguns medicamentos (sulfas, certos antibióticos), naftalina, favas ou infecções.</p>
@@ -289,7 +295,7 @@
 		</div>
 	</section>
 
-	<section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+	<section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb about-home" id="about-section">
 		<div class="container">
 			<div class="row d-flex">
 				<div class="col-md-6 col-lg-5 d-flex">
@@ -328,7 +334,7 @@
 	</section>
 
 
-	<section class="ftco-section testimony-section img" style="background-image: url(images/54.png);">
+	<section class="ftco-section testimony-section img stories-section" style="background-image: url(images/54.png);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row justify-content-center pb-3">
@@ -422,7 +428,7 @@
 	</section>
 
 	<!-- ONDE ATENDO -->
-	<section class="ftco-section ftco-no-pb" style="padding-bottom:20px;">
+	<section class="ftco-section ftco-no-pb locations-section" style="padding-bottom:20px;">
 		<div class="container">
 			<div class="row justify-content-center mb-4">
 				<div class="col-md-8 text-center heading-section ftco-animate">
@@ -469,7 +475,7 @@
 	</section>
 
 	<!-- REEMBOLSO -->
-	<section style="background:#fff8f7; padding:40px 0; border-top:1px solid #f0e0de; border-bottom:1px solid #f0e0de;">
+	<section class="refund-section" style="background:#fff8f7; padding:40px 0; border-top:1px solid #f0e0de; border-bottom:1px solid #f0e0de;">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-md-7 mb-3 mb-md-0">
@@ -492,7 +498,7 @@
 	</section>
 
 	<!-- FAQ -->
-	<section class="ftco-section" style="background:#f8f9fa;">
+	<section class="ftco-section faq-section" style="background:#f8f9fa;">
 		<div class="container">
 			<div class="row justify-content-center mb-4">
 				<div class="col-md-8 text-center heading-section ftco-animate">
@@ -586,15 +592,16 @@
 		</div>
 	</section>
 
-	<footer style="background:#1a1a2e; color:#ccc; padding:48px 0 0;">
+	<footer class="home-footer" style="background:#1a1a2e; color:#ccc; padding:48px 0 0;">
   <div class="container">
     <div class="row">
 
       <!-- Logo + tagline -->
       <div class="col-md-4 mb-4">
-        <a href="index.html">
-          <img loading="lazy" src="images/logo4.png" alt="Dra. Mariana Rezende" style="height:70px; margin-bottom:12px;">
-        </a>
+	        <a class="footer-brand-lockup" href="index.html">
+	          <img src="images/hemacia-exploradora-logo.png" alt="" aria-hidden="true">
+	          <span><strong>Dra. Mariana Rezende</strong><small>Hematologia Pediátrica</small></span>
+	        </a>
         <p style="font-size:0.88rem; color:#aaa; line-height:1.6;">
           Hematologista pediátrica em Belo Horizonte.<br>
           Cuidado especializado com escuta humana.
