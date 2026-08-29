@@ -21,7 +21,7 @@
 	
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/pediatric-home.css">
+  <link rel="stylesheet" href="css/pediatric-home.css?v=20260829-2">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<script src="js/meta-pixel.js" defer></script>
 </head>
@@ -340,6 +340,17 @@
     document.getElementById('mobEspAccordion').addEventListener('show.bs.collapse', function(e) {
       var btn = this.querySelector('[data-target="#' + e.target.id + '"]');
       if (btn) { var ic = btn.querySelector('.fa'); ic.className = ic.className.replace('fa-plus','fa-minus'); }
+    });
+    document.getElementById('mobEspAccordion').addEventListener('shown.bs.collapse', function(e) {
+      var card = e.target.closest('.card');
+      if (!card) return;
+
+      window.setTimeout(function() {
+        var navbar = document.getElementById('ftco-navbar');
+        var navbarHeight = navbar ? navbar.offsetHeight : 0;
+        var destination = card.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 12;
+        window.scrollTo({ top: Math.max(0, destination), behavior: 'smooth' });
+      }, 40);
     });
     document.getElementById('mobEspAccordion').addEventListener('hide.bs.collapse', function(e) {
       var btn = this.querySelector('[data-target="#' + e.target.id + '"]');
